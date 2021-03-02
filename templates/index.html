@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Миссия колонизации марса</title>
+</head>
+<body>
+<h1>Миссия колонизации марса</h1>
+<h4>И на марсе будут цвести яблони</h4>
+{% if 'инженер' in g  or 'строитель' in g %}
+
+</h3>Инженерные тренажеры</h3>
+<img src='/static/img/it.jpg'>
+{% else %}
+<h3>Научные симуляторы</h3>
+<img src='/static/img/ns.jpg'>
+{% endif %}
+</body>
+</html>
