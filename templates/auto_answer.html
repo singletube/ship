@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>{{ title }}</title>
+    </head>
+
+
+    <body>
+            <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href={{a}} />
+        <h1>Миссия Колонизация Марса</h1>
+        <h4>И на Марсе будут яблони цвести!</h4>
+    <table>
+<tr><th>Цвет</th><th>Возраст</th></tr> <!--ряд с ячейками заголовков-->
+<tr><td>
+         {% if pol == "male" %}
+        <img src='/static/img/m.png'>
+        {% elif pol == "female" %}
+        <img src='/static/img/fm.png'>
+        {% endif %}
+    </td><td>
+
+        {% if age < 21 %}
+        <img src='/static/img/back.png'>
+        {% else %}
+        <img src='/static/img/back_2.png'>
+        {% endif %}
+        </td></tr> <!--ряд с ячейками тела таблицы-->
+</table>
+    </body>
+</html>
